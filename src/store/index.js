@@ -21,6 +21,9 @@ export default new Vuex.Store({
     increment: function (state) {
       state.count++;
     },
+    decrement: function (state) {
+      state.count--;
+    },
   },
   getters: {
     users: function (state) {

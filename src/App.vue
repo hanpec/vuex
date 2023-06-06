@@ -3,6 +3,7 @@
     <button v-on:click="increment">UP</button>
     <h1>Count:{{ count }}</h1>
     <UserList></UserList>
+    <button v-on:click="decrement">DOWN</button>
   </div>
 </template>
 
@@ -15,6 +16,9 @@ export default {
   methods: {
     increment: function () {
       this.$store.commit('increment')
+    },
+    decrement: function () {
+      this.$store.commit('decrement')
     }
   },
   computed: {
